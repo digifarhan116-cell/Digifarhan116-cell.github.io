@@ -1,1 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farhan Anwar | Professional Portfolio</title>
+    <style>
+        :root {
+            --primary: #0056b3;
+            --primary-dark: #003d82;
+            --bg-body: #f4f6f9;
+            --text-main: #2d3748;
+            --text-muted: #555555;
+            --white: #ffffff;
+            --border: #e2e8f0;
+        }
 
+        * {
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6;
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            background: var(--white);
+            border-bottom: 1px solid var(--border);
+            z-index: 1000;
+            padding: 14px 20px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+        }
+
+        nav a {
+            color: var(--text-main);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 600;
+            transition: color 0.2s;
+        }
+
+        nav a:hover {
+            color: var(--primary);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            background: var(--white);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+        }
+
+        header {
+            text-align: center;
+            padding-bottom: 30px;
+            border-bottom: 2px solid var(--border);
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid var(--primary);
+            margin-bottom: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+
+        h1 {
+            margin: 0;
+            color: var(--primary);
+            font-size: 2.2rem;
+        }
+
+        .tagline {
+            font-size: 1.05rem;
+            color: var(--text-muted);
+            margin-top: 6px;
+            font-weight: 500;
+        }
+
+        section {
+            padding: 25px 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        section:last-of-type {
+            border-bottom: none;
+        }
+
+        h2 {
+            color: var(--primary);
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+        }
+
+        p {
+            margin: 0 0 10px 0;
+            color: var(--text-muted);
+        }
+
+        .card {
+            background: #f8fafc;
+            border: 1px solid var(--border);
+            border-left: 4px solid var(--primary);
+            padding: 16px 20px;
+            border-radius: 6px;
+            margin-bottom: 14px;
+        }
+
+        .card h3 {
+            margin: 0 0 6px 0;
+            font-size: 1.15rem;
+            color: var(--text-main);
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 12px;
+        }
+
+        .skill-item {
+            background: #f1f5f9;
+            padding: 10px 14px;
+            border-radius: 6px;
+            font-size: 0.95rem;
+            font-weight: 500;
+            border-left: 3px solid var(--primary);
+        }
+
+        ul {
+            margin: 0;
+            padding-left: 20px;
+            color: var(--text-muted);
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: var(--primary);
+            color: var(--white);
+            padding: 8px 16px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-top: 8px;
+            transition: background 0.2s;
+        }
+
+        .btn:hover {
+            background: var(--primary-dark);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: var(--primary);
+            border: 2px solid var(--primary);
+        }
+
+        .btn-outline:hover {
+            background: var(--primary);
+            color: var(--white);
+        }
+
+        .contact-box {
+            background: #eff6ff;
+            border: 1px solid #bfdbfe;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .contact-link {
+            color: var(--primary);
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .contact-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HOME / NAVBAR -->
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Featured Projects ⭐</a>
+        <a href="#case-studies">Case Studies ⭐</a>
+        <a href="#experience">Experience / Freelance</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        <!-- HEADER -->
+        <header id="home">
+            <img src="profile.jpg" alt="Farhan Anwar" class="profile-img">
+            <h1>Farhan Anwar</h1>
+            <p class="tagline">B.Com (Hons) in Accounting & Finance | Digital Marketer | AI Specialist</p>
+        </header>
+
+        <!-- ABOUT ME -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                Detail-oriented and forward-thinking B.Com student specializing in Accounting and Finance, with practical, hands-on experience leveraging AI tools and Digital Marketing strategies. Adept at translating financial and analytical concepts into impactful AI-driven projects, presentations, and digital content that drive engagement and deliver measurable results.
+            </p>
+            <p><strong>Education:</strong> Bachelor of Commerce (B.Com Hons in Accounting) — West Bengal State University (Ongoing)[cite: 1]</p>
+            <p><strong>Location:</strong> Kankinara, Bhatpara, North 24 Parganas, West Bengal - 743126[cite: 1]</p>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item">Meta Ads (Facebook & Instagram)[cite: 1]</div>
+                <div class="skill-item">Google Ads (Search & Display Basics)[cite: 1]</div>
+                <div class="skill-item">Jio AI Classroom Workflows</div>
+                <div class="skill-item">Canva Graphic & Banner Design[cite: 1]</div>
+                <div class="skill-item">Lead Generation & Analytics[cite: 1]</div>
+                <div class="skill-item">Social Media Marketing (SMM & SMO)[cite: 1]</div>
+                <div class="skill-item">Website Development & Local SEO[cite: 1]</div>
+                <div class="skill-item">MS Office (Excel, Word, PowerPoint)[cite: 1]</div>
+            </div>
+        </section>
+
+        <!-- FEATURED PROJECTS ⭐ -->
+        <section id="projects">
+            <h2>Featured Projects ⭐</h2>
+            <div class="card">
+                <h3>Digital Marketing Advance Classes Project</h3>
+                <p>Complete execution files, advanced ad strategies, audience targeting parameters, and assets built during advance digital marketing training.</p>
+                <a href="https://drive.google.com/drive/folders/1mMN2iylLiv69201xXbhfYxr7FjZmQemF?usp=sharing" target="_blank" class="btn">View on Google Drive</a>
+            </div>
+
+            <div class="card">
+                <h3>Jio AI Classroom Project</h3>
+                <p>Practical implementation of artificial intelligence workflows, generative prompts, automated content creation, and analytical problem-solving modules.</p>
+                <a href="https://drive.google.com/drive/folders/1pmqDOo_nRlO9nDYa2tFKEltrAJKQkkcy?usp=sharing" target="_blank" class="btn">View on Google Drive</a>
+            </div>
+
+            <div class="card">
+                <h3>Meta Ads Campaign & YouTube Creative Assets</h3>
+                <p>Lead generation and engagement campaigns managed via Meta Ads Manager[cite: 1], paired with CTR-focused YouTube channel thumbnails designed on Canva[cite: 1].</p>
+                <a href="https://drive.google.com/drive/folders/1mMN2iylLiv69201xXbhfYxr7FjZmQemF?usp=sharing" target="_blank" class="btn">View Campaign Files</a>
+            </div>
+        </section>
+
+        <!-- CASE STUDIES ⭐ -->
+        <section id="case-studies">
+            <h2>Case Studies ⭐</h2>
+            <div class="card">
+                <h3>Digital Marketing 10 Days Earning & Strategy Blueprint</h3>
+                <p>Hands-on case study detailing a 10-day digital marketing execution roadmap, client outreach workflow, monetization method, and conversion analysis.</p>
+                <a href="https://drive.google.com/drive/folders/1V793tbfGoYdc5mB3FxQ-VVQH41PlRglL?usp=sharing" target="_blank" class="btn btn-outline">Read Case Study on Drive</a>
+            </div>
+        </section>
+
+        <!-- EXPERIENCE / FREELANCE -->
+        <section id="experience">
+            <h2>Experience / Freelance</h2>
+            <div class="card">
+                <h3>Freelance Digital Marketer & AI Consultant</h3>
+                <p><strong>Self-Driven & Freelance Projects</strong>[cite: 1]</p>
+                <ul>
+                    <li>Created tailored Meta Ads campaigns to generate verified client leads and improve audience reach[cite: 1].</li>
+                    <li>Designed professional banners, presentation decks, and social media creative assets using Canva[cite: 1].</li>
+                    <li>Integrated AI-assisted tools to streamline content ideation, copywriting, and rapid website structuring.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- CERTIFICATIONS -->
+        <section id="certifications">
+            <h2>Certifications</h2>
+            <ul>
+                <li><strong>Advanced Digital Marketing Training (120 Days):</strong> Zinmatt (Meta Ads, Google Ads, SEO, SMM, Email Marketing)[cite: 1]</li>
+                <li><strong>Jio AI Classroom Certification:</strong> Applied Artificial Intelligence & Digital Solutions</li>
+                <li><strong>Basic Computer Applications:</strong> West Bengal State recognized computer training (MS Excel, PowerPoint, Data Entry)[cite: 1]</li>
+                <li><strong>Masters in Digital Marketing (10 Days Intensive):</strong> Practical Earnings & Outreach</li>
+            </ul>
+        </section>
+
+        <!-- ACHIEVEMENTS -->
+        <section id="achievements">
+            <h2>Achievements</h2>
+            <ul>
+                <li>Formulated and deployed end-to-end digital advertising campaigns with optimized conversion funnels[cite: 1].</li>
+                <li>Self-hosted and configured personal digital portfolio on GitHub Pages without dependency on external hosting.</li>
+                <li>Completed structured professional industry trainings in both AI and Digital Marketing alongside graduation studies.</li>
+            </ul>
+        </section>
+
+        <!-- RESUME -->
+        <section id="resume">
+            <h2>Resume</h2>
+            <p>Access my clean, blue and white professional resume with complete academic and practical details.</p>
+            <a href="resume.pdf" target="_blank" class="btn">Download / View Resume (PDF)</a>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="contact-box">
+                <p><strong>Phone:</strong> <a href="tel:9062546030" class="contact-link">+91 9062546030</a>[cite: 1]</p>
+                <p><strong>Email:</strong> <a href="mailto:digifarhan116@gmail.com" class="contact-link">digifarhan116@gmail.com</a>[cite: 1]</p>
+                <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/farhan-anwar-726312398?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="contact-link">linkedin.com/in/farhan-anwar</a></p>
+                <p><strong>Instagram:</strong> <a href="https://www.instagram.com/digifarhan116?stkn=YmI1cnVvbTA5bnYy" target="_blank" class="contact-link">@digifarhan116</a></p>
+                <p><strong>Address:</strong> HI/17, BI/04, Kankinara, Bhatpara, North 24 PGS 743126, West Bengal[cite: 1]</p>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>
